@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+a {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #1f242d;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2em 10em;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+#logo {
+    color: white;
+    font-size: 3em;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: default;
+    animation: slideright 1s ease forwards;
+}
+
+.navbar a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 50px;
+    animation: slidetop 2s ease forwards;
+    animation-delay: calc(.2s*var(--i));
+
+}
+
+.navbar .active,
+.navbar a:hover {
+    color: #0ef;
+}
+
+.home {
+    font-size: 1.5em;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5em 10% 0;
+}
+
+.home-content {
+    max-width: 40em;
+    margin: 10px;
+}
+
+.home-content h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    /* padding-bottom: 10px */
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 30px;
+}
+
+
+.home-content p {
+    font-size: .8em;
+    margin-bottom: 10px;
+}
+
+.home-content h3 span {
+    color: #0ef;
+
+}
+
+
+.home-content h1 {
+    font-size: 4em;
+    font-weight: 10000;
+    margin: -3px 0;
+    animation: head 1s ease;
+    animation-delay: 2s;
+}
+
+.home-img img {
+    width: 20em;
+    opacity: 0;
+    animation: zoomin 1s ease forwards , floatimage 4s ease-in-out infinite;
+    animation-delay: .5s , 2s;
+}
+
+
+.social-media {
+    margin: 25px 0;
+}
+.social-media a {
+    font-size: 1.3em;
+    display: inline-flex;
+    text-decoration: none;
+    transition: .3s;
+    height: 1.5em;
+    width: 1.5em;
+    color: white;
+    border: solid 2px #0ef;
+    background-color: #0ef;
+    margin: 0 5px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: slider .5s ease forwards;
+    animation-delay: calc(.2s*var(--i));
+    
+}
+.social-media a i {
+    
+    margin: auto;
+}
+
+.social-media a:nth-of-type(1):hover {
+    border: solid 2px rgb(0, 0, 255);
+    background-color: rgb(0, 0, 255);
+    box-shadow:0 0  20px rgb(0, 0, 255); 
+
+}
+
+.social-media a:nth-of-type(2):hover {
+    color: black;
+    border: solid 2px rgb(255, 0, 179);
+    background-color: rgb(255, 0, 179);
+    box-shadow:0 0  20px rgb(255, 0, 179); 
+
+}
+
+.social-media a:nth-of-type(3):hover {
+    border: solid 2px rgb(103, 103, 192);
+    background-color: rgb(103, 103, 192);
+    box-shadow:0 0  20px rgb(103, 103, 192); 
+
+}
+
+.social-media a:nth-of-type(4):hover {
+    border: solid 2px rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+    box-shadow:0 0  20px rgb(255, 0, 0); 
+
+}
+
+.social-media a:nth-of-type(5):hover {
+    color: white;
+    border: solid 2px rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    box-shadow:0 0  20px rgb(0, 0, 0); 
+
+}
+.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #0ef;
+    color: #1f242d;
+    text-decoration: none;
+    border-radius: 30px;
+    animation: slidetop 1s ease;
+}
+.btn:hover{
+    background-color: rgb(19, 168, 179);
+}
+
+
+@keyframes slideright {
+    0%{
+        transform:translateX(-100px);
+        opacity:0;
+    }
+    100%{
+        transform:translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes slider {
+    0%{
+        transform:translateX(100px);
+        opacity:0;
+    }
+    100%{
+        transform:translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes slidetop {
+    0%{
+        transform:translateY(100px);
+        opacity:0;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity:1;
+    }
+}
+@keyframes zoomin {
+    0%{
+        transform:scale(0);
+        opacity:0;
+    }
+    100%{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+@keyframes floatimage {
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-24px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+/* @keyframes head {
+    0%{
+        font-size: 1em;
+        opacity:0;
+    }
+    50%{
+        font-size: 10em;
+        opacity:1;
+    }
+    100%{
+        font-size: 4em;
+        opacity:1;
+    }
+} */

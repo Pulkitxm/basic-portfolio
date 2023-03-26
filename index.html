@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulkit - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/Pulkit.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="" id="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="" style="--i:1"  class="active">Home</a>
+            <a href="" style="--i:2" >About</a>
+            <a href="" style="--i:3" >Skills</a>
+            <a href="" style="--i:4" >Portfolio</a>
+            <a href="" style="--i:5" >Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello , It's me</h3>
+            <h1>Pulkit
+                <!-- <p class="Pulkit" style="color: white;">P</p>
+                <p class="Pulkit" style="color: #0ef;">u</p>
+                <p class="Pulkit" style="color: white;">l</p>
+                <p class="Pulkit" style="color: #0ef;">k</p>
+                <p class="Pulkit" style="color: white;">i</p>
+                <p class="Pulkit" style="color: #0ef;">t</p> -->
+            </h1>
+            <h3>and I am a <span id="multiple-texts"></span></h3>
+            <p>Currently a first year Day-Scholar / College ambassador-Devtwon , Coding Ninja / Coding Enthusiast ( Java , C , Python ) Git / Github and learning </p>
+            <div class="social-media">
+                <a style="--i:6" href="https://www.facebook.com/Pulkit.fb/"  target="_blank" ><i class='bx bxl-facebook-circle'></i></a>
+                <a style="--i:7" href="https://www.instagram.com/teckypulkit/" target="_blank" ><i class='bx bxl-instagram'></i></a>
+                <a style="--i:8" href="www.linkedin.com/in/pulkit-75237a1b8" target="_blank" ><i class='bx bxl-linkedin'></i></a>
+                <a style="--i:9" href="https://www.youtube.com/@CodeWithPulkit" target="_blank" ><i class='bx bxl-youtube'></i></a>
+                <a style="--i:10" href="https://github.com/Pulkitxm" target="_blank" ><i class='bx bxl-github'></i></a>
+            </div>
+            <a href="assets/Resume-Pulkit-_.pdf" class="btn">Downlaod Resume</a>
+        </div>
+        <div class="home-img">
+            <img src="assets/Pulkit-banner.png" draggable="false" alt="">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+  <span id="element"></span>
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#multiple-texts', {
+      strings: ["First Year College Student" , "Programmer" , "Youtuber", "Passionate Coder", "Web Devwelopement Lover"],
+      typeSpeed : 100,
+    backSpeed : 100,
+    backDelay : 1000,
+    loop:true
+    });
+  </script>
+</body>
+
+</html>
